@@ -16,6 +16,14 @@ You can install the package via composer:
 composer require martinpham/laravel-inertia-attributes
 ```
 
+Register middleware
+
+```php
+        $middleware->web(append: [
+            \MartinPham\InertiaAttributes\Http\Middleware\InertiaAttributesMiddleware::class,
+        ]);
+```
+
 ## Usage
 
 This package allows you to use PHP 8 attributes to define Inertia.js properties and methods in your Laravel controllers.
